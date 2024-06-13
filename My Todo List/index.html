@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>My To-Do List</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="assets/styles.css">
+    </head>
+    <body>
+           <!-- create a container for the todo list -->
+    <div class="page-container">
+        <!-- todo list header -->
+        <div class="header">
+            <h1>To Do List</h1>
+        </div>
+
+        <!-- create input box -->
+        <div class="todo-form">
+            <input
+            type="text"
+            class="assign-item"
+            name="assign_box"
+            id="assign-box"
+            placeholder="Add To-Do List"
+            />
+
+            <!-- add button -->
+            <button class="assign-button" onclick="addTask()">Add</button>
+        </div>
+
+        <!-- task list -->
+        
+        <div class="task-list">
+            <h2>Task List</h2>
+            <ul id="todo-container"></ul>
+        </div>
+        <div class="completed-tasks">
+            <h2>Completed Tasks</h2>
+            <ul id="complete-container"></ul>
+        </div>
+
+            <!-- task list counter -->
+            <div class="counter-container">
+                <div class="task-counters">
+                  Total: <span id="total-count">0</span> | Complete: <span id="complete-count">0</span> | Incomplete:<span id="incomplete-count">0</span>
+                </div>
+            </div>
+    </div>
+        
+        <script src="assets/index.js" async defer></script>
+    </body>
+</html>
