@@ -1,0 +1,144 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    box-shadow: 0 1px 3px -2px black;
+    background: #EDEDED;
+    flex-wrap: wrap;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-logo p {
+    color: #171717;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: #5F374B;
+    list-style: none;
+    font-size: 24px;
+    font-weight: 500;
+    flex-wrap: wrap;
+}
+
+.nav-menu li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.nav-menu hr {
+    border: none;
+    border-radius: 10px;
+    width: 80%;
+    height: 5px;
+    background-color: #8C6A5D;
+}
+
+.nav-login-cart {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-login-cart button {
+    width: 130px;
+    height: 40px;
+    outline: none;
+    background-color: #DA0037;
+    color: #EDEDED;
+    border: 1px solid #EDEDED;
+    border-radius: 90px;
+    font-size: 24px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.nav-login-cart button:active {
+    background-color: #EDEDED;
+    color: #DA0037;
+}
+
+.nav-cart-count {
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -31px;
+    margin-left: -31px;
+    font-size: 12px;
+    background: #DA0037;
+    color: #EDEDED;
+    border-radius: 10px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-menu li {
+        font-size: 20px;
+    }
+
+    .nav-login-cart {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav-login-cart button {
+        width: 100px;
+        height: 35px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-logo p {
+        font-size: 28px;
+    }
+
+    .nav-menu {
+        gap: 5px;
+    }
+
+    .nav-menu li {
+        font-size: 18px;
+    }
+
+    .nav-login-cart {
+        gap: 5px;
+    }
+
+    .nav-login-cart button {
+        width: 90px;
+        height: 30px;
+        font-size: 18px;
+    }
+
+    .nav-cart-count {
+        height: 18px;
+        width: 18px;
+        font-size: 10px;
+    }
+}

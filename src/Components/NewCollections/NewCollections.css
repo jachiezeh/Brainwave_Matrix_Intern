@@ -1,0 +1,77 @@
+.new-collections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    padding: 20px;
+}
+
+.new-collections h1 {
+    color: #171717;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.new-collections hr {
+    width: 200px;
+    height: 6px;
+    border-radius: 10px;
+    background: #8C6A5D;
+}
+
+.new-collections-item {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+    .new-collections h1 {
+        font-size: 36px;
+    }
+
+    .new-collections hr {
+        width: 150px;
+        height: 4px;
+    }
+
+    .new-collections-item {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .new-collections h1 {
+        font-size: 30px;
+    }
+
+    .new-collections hr {
+        width: 120px;
+        height: 3px;
+    }
+
+    .new-collections-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .new-collections h1 {
+        font-size: 24px;
+    }
+
+    .new-collections hr {
+        width: 100px;
+        height: 2px;
+    }
+
+    .new-collections-item {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+}
